@@ -1,3 +1,242 @@
-Hello 
-Thanks For Using Our Code 
-  I Hope You Like Our Code , The Code Is Madded By CyeroX Developemnt Team 
+# Tickets CYX
+
+A premium Discord ticket management bot built for fast support systems, organized moderation, and clean automation. Tickets CYX focuses on performance, clean UI responses, and a modern ticket workflow suitable for public communities and support servers.
+
+Developed by CyeroX Development Team.
+
+Discord Community
+https://discord.gg/veEr2BK8NA
+
+Overview
+
+Tickets CYX provides a complete support ticket system for Discord servers. The bot creates private support channels, manages staff interactions, logs transcripts, and keeps ticket operations organized.
+
+The system uses slash commands, buttons, and modals to deliver a smooth user experience. All responses appear in clean embeds with consistent design.
+
+Key Features
+
+• Full ticket management system
+• Interactive setup command
+• Multiple ticket button types
+• Private support channels
+• Ticket claim system for staff
+• Add and remove users inside tickets
+• Lock and unlock ticket channels
+• HTML transcript generation
+• Ticket statistics command
+• Ticket logs system
+• Premium styled embed responses
+• Advanced help menu with buttons
+• Modular bot structure using cogs and events
+• JSON based local storage
+• Clean and scalable code design
+
+Ticket System
+
+Tickets CYX creates private support channels when users press ticket buttons.
+
+Ticket flow
+
+• User presses ticket panel button
+• Bot creates private support channel
+• Staff role receives notification
+• Support staff manage ticket with buttons
+• Transcript generated before ticket deletion
+
+Ticket Controls
+
+• Create Ticket
+• Close Ticket
+• Delete Ticket
+• Claim Ticket
+• Add User
+• Remove User
+• Lock Ticket
+• Unlock Ticket
+• Generate Transcript
+
+Commands
+
+Ticket Commands
+
+/ticket setup
+Interactive setup command. Creates the ticket panel with custom embed and buttons.
+
+/ticket panel
+Send ticket panel again.
+
+/ticket close
+Close the current ticket.
+
+/ticket delete
+Delete the current ticket.
+
+/ticket rename
+Rename the ticket channel.
+
+/ticket add
+Add a member to the ticket.
+
+/ticket remove
+Remove a member from the ticket.
+
+/ticket logs
+Set the logs channel.
+
+/ticket category
+Set the ticket category.
+
+/ticket role
+Set the support role.
+
+/ticket stats
+Display ticket statistics.
+
+Help Command
+
+/help
+
+Features
+
+• Button based navigation
+• Category based command view
+• Clean embed interface
+• Usage examples for commands
+
+Project Structure
+
+```
+Tickets-CYX/
+│
+├── app.py
+├── .env
+├── requirements.txt
+│
+├── cogs/
+│   ├── ticket.py
+│   ├── admin.py
+│   └── help.py
+│
+├── events/
+│   ├── on_ready.py
+│   └── on_interaction.py
+│
+├── utils/
+│   ├── embeds.py
+│   ├── views.py
+│   ├── database.py
+│   └── config.py
+│
+├── data/
+│   └── tickets.json
+│
+└── README.md
+```
+
+Requirements
+
+• Python 3.12 or newer
+• Discord Bot Token
+• Basic Discord developer setup
+
+Python Libraries
+
+discord.py
+python-dotenv
+aiofiles
+
+requirements.txt example
+
+```
+discord.py
+python-dotenv
+aiofiles
+```
+
+Installation
+
+Step 1
+
+Clone the repository
+
+```
+git clone https://github.com/yourusername/tickets-cyx.git
+cd tickets-cyx
+```
+
+Step 2
+
+Install dependencies
+
+```
+pip install -r requirements.txt
+```
+
+Step 3
+
+Create the .env file
+
+```
+BOT_TOKEN=your_bot_token_here
+BOT_NAME=Tickets CYX
+BOT_STATUS=Watching your support requests
+OWNER_ID=your_discord_id
+```
+
+Step 4
+
+Run the bot
+
+```
+python app.py
+```
+
+Configuration
+
+Server administrators must run the setup command to configure the ticket system.
+
+Run
+
+/ticket setup
+
+Setup wizard will ask for
+
+• Ticket panel title
+• Panel description
+• Embed color
+• Ticket category
+• Support role
+• Ticket buttons with emojis
+
+After setup the bot sends a ticket panel where users create support tickets.
+
+Permissions
+
+Administrator permission required for setup and management commands.
+
+Support staff role manages ticket channels.
+
+Data Storage
+
+Tickets CYX stores ticket information inside local JSON files.
+
+Stored data includes
+
+• Ticket owner
+• Channel ID
+• Ticket status
+• Guild information
+
+License
+
+This project is open source and free to use. Modify it for personal or community servers.
+
+Credits
+
+Bot developed by
+
+CyeroX Development Team
+
+Join the community
+
+https://discord.gg/veEr2BK8NA
